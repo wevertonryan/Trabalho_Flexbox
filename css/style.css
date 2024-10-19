@@ -1,22 +1,138 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'TT Norms Pro', Arial, sans-serif;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    font-size: 2.25em;
+    margin: 40px;
+}
+
+body {
+    background-color: var(--base-color);
+    color: var(--primary-color);
+}
+
 header, footer {
     display: flex;
     width: 100%;
     height: auto;
 }
+
 header {
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    font-family: 'TT Norms Pro', Arial, sans-serif;
+    font-weight: 300;
+    background-color: var(--base-color);
+    border-bottom: 2px solid var(--primary-color);
 }
+
+header h1 {
+    font-weight: 400;
+    font-size: 2.25em;
+    margin: 20px;
+}
+
 footer {
     flex-direction: column;
     align-items: center;
+    color: var(--base-color);
+    background-color: var(--primary-color);
 }
 
-a:link {
-    text-decoration: none;
+.menu {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: auto;
+    width: 300px;
+}
+
+.menu a {
+    display: block;
+    flex-grow: 1;
+    text-align: center;
+    padding: 10px;
+}
+
+.sobre, .atendimento, .tratamentos, .preco, .newsletter {
+    display: flex;
+    justify-content: center;
+    padding-top: 83px;
+    overflow: hidden;
+}
+
+.sobre-total, .atendimento-total {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+}
+
+.sobre {
+    background-color: var(--primary-color);
+    color: var(--base-color);   
+}
+
+.sobre-total {
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sobre-total img {
+    margin-top: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 50%;
+    min-width: 450px;
+    align-self: flex-end;
+}
+
+.sobre-info {
+    flex: 1 1 450px;
+    padding: 20px;
+}
+
+.sobre-info h1, .sobre-info p {
+    font-size: 1.2em;
+    margin: 20px;
+}
+
+.sobre-info h1 {
+    font-size: 2.25em;
+}
+
+.atendimento-total h1 {
+    display: block;
+    width: 100%;
+}
+
+.atendimento-item {
+    display: block;
+    background-color: var(--primary-color);
+    color: var(--base-color);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    flex: 1 1 360px;
+}
+
+.atendimento-item h2, .atendimento-item p {
+    margin: 10px;
+}
+
+.tratamento-total {
+
+}
+
+.tratamento-item {
+    display: block;
+    flex: 1 1 360px;
 }
