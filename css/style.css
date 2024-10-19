@@ -74,7 +74,7 @@ footer p {
     padding: 10px;
 }
 
-.sobre, .atendimento, .tratamentos, .preco, .newsletter {
+.sobre, .atendimento, .tratamentos, .preco {
     display: flex;
     justify-content: center;
     padding-top: 83px;
@@ -196,20 +196,104 @@ footer p {
 }
 
 .preco {
-	background: #f7f7f7;
+	background: var(--base-color);
     flex-wrap: wrap;
 	padding: 60px;
 }
 
 .preco-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 	flex: 1 1 260px;
-	border: 4px solid white;
+	border: 4px solid var(--primary-color);
 	padding: 20px;
 	margin: 10px;
 }
 
 .preco-item h2 {
+    display: flex;
+    align-items: center;
+    height: 150px;
 	font-size: 3em;
-	color: #a4a4a4;
+	color: var(--primary-color);
 	text-align: center;
 	margin-top: 20px;
+}
+
+.preco-item span {
+    width: 80%;
+	max-width: 300px;
+	padding: 20px 10px;
+	display: block;
+	font-size: 3em;
+	text-align: center;
+	font-weight: 500;
+	border-bottom: 4px solid var(--primary-color);
+}
+
+.preco-item sup {
+	font-size: 1.5rem;
+}
+
+.preco-item-img {
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: flex-end;
+
+    border-top: 4px solid var(--primary-color);
+    border-bottom: 4px solid var(--primary-color);
+    padding-inline: 10px;
+    padding-top: 15px;
+    width: 80%;
+    height: 250px;
+}
+
+.preco-item-img img {
+    height: 100%;
+}
+
+.preco-item ul {
+    display: block;
+	max-width: 300px;
+    width: 80%;
+    height: 250px;
+	margin: 20px 0;
+	font-size: 1.25em;
+	font-style: italic;
+	color: var(--primary-color);
+}
+
+.preco-item li {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+.preco-item li::after {
+	content: '';
+	display: block;
+	width: 6px;
+	height: 6px;
+	background: var(--secondary-color);
+	border-radius: 50%;
+}
+
+.preco-comprar {
+    max-width: 300px;
+    overflow: hidden;
+	margin: 20px auto;
+	border: 4px solid;
+    background-color: var(--primary-color);
+	color: var(--base-color);
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 2.25em;
+    border-radius: 10px;
+	padding: 15px;
+	text-align: center;
+
+}
