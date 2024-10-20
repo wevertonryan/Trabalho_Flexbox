@@ -1,0 +1,49 @@
+:root {
+    --cor-de-fundo: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--base-color);
+}
+header {
+    justify-content: center;
+    color: var(--base-color);
+    background-color: var(--primary-color);
+}
+header a {
+    font-weight: 400; 
+    font-size: 2.25em; 
+    margin: 20px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.imagem {
+    height: 400px;
+    width: 400px;
+    background-position: center;
+    background-size: cover;
+    background-image: url('./game_img/the-rock-cabeludo.png');
+}
+.imagem:hover {
+    cursor: pointer;
+}
+.imagem:active {
+    background-image: url('./game_img/the-rock-careca.png');  
+}
+.score {
+    transform: translate(5vw, 15vh);
+    width: 80vw;
+    position: absolute;
+    user-select: none;
+}
+.score p {
+    text-align: start;
+    font-size: 2.0em;
+}
